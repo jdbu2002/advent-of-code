@@ -6,6 +6,7 @@ I'll be doing the Advent of Code. In each year, I'm gonna choose a random langua
 
 I'll be using this repository to keep track of my progress and to share my solutions with others.
 
-| Year |                                      Language                                      |
-| :--: | :--------------------------------------------------------------------------------: |
-| 2023 | Uiua &nbsp; <img src="https://www.uiua.org/uiua-logo.png"  width="20" height="20"> |
+| Year |                                         Language                                         |
+| :--: | :--------------------------------------------------------------------------------------: |
+| 2024 |                                      Rust &nbsp; 🦀                                      |
+| 2023 | Uiua &nbsp; <img src="https://www.uiua.org/assets/uiua-logo.png" width="20" height="20"> |

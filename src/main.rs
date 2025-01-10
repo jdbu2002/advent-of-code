@@ -1,7 +1,7 @@
 mod day_1;
 mod extras;
 
-use day_1::solution::solution as day_1_solution;
+use day_1::solution::{part_one as d1_p1, part_two as d1_p2};
 
 fn main() {
     loop {
@@ -20,15 +20,28 @@ fn main() {
         match problem_number {
             1 => {
                 println!("Problem 1: ");
-                println!("Want to run the example? (y/n): ");
+
+                let mut part = String::new();
+
+                println!("Select part (1 or 2): ");
+                std::io::stdin()
+                    .read_line(&mut part)
+                    .expect("Failed to read line");
+
                 let mut example_string = String::new();
+
+                println!("Want to run the example? (y/n): ");
                 std::io::stdin()
                     .read_line(&mut example_string)
                     .expect("Failed to read line");
 
                 let example = example_string.trim() == "y";
 
-                day_1_solution(example);
+                if part.trim() == "1" {
+                    d1_p1(example);
+                } else {
+                    d1_p2(example);
+                }
             }
             _ => {
                 println!("Exiting...");

@@ -1,9 +1,11 @@
 mod day_1;
 mod day_2;
+mod day_3;
 mod extras;
 
 use day_1::solution::{part_one as d1_p1, part_two as d1_p2};
 use day_2::solution::{part_one as d2_p1, part_two as d2_p2};
+use day_3::solution::{part_one as d3_p1, part_two as d3_p2};
 
 fn problem_selector(problem_number: u8, part1: fn(bool), part2: fn(bool)) {
     println!("Problem {problem_number}: ");
@@ -32,7 +34,7 @@ fn problem_selector(problem_number: u8, part1: fn(bool), part2: fn(bool)) {
 }
 
 fn main() {
-    let problem_funcs: [(fn(bool), fn(bool)); 2] = [(d1_p1, d1_p2), (d2_p1, d2_p2)];
+    let problem_funcs: [(fn(bool), fn(bool)); 3] = [(d1_p1, d1_p2), (d2_p1, d2_p2), (d3_p1, d3_p2)];
 
     loop {
         println!(
